@@ -45,11 +45,13 @@ export function NavHeader({ onProjectsClick, onBlogsClick }: NavHeaderProps) {
       <div className="flex gap-3">
         {/* Gmail icon */}
         <a
-          href="mailto:dheenathsundararajan@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=dheenathsundararajan@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
           className="relative w-7 h-7 flex items-center justify-center text-white transition-transform duration-300 hover:scale-110 active:scale-95"
           title="Email"
         >
-          <div className="absolute inset-0 rounded-full border border-google-blue/30 animate-spin" style={{animationDuration: '4s'}} />
+          <div className="absolute inset-0 rounded-full border border-google-blue/30 animate-spin" style={{ animationDuration: '4s' }} />
           <svg
             className="w-4 h-4 relative z-10"
             fill="currentColor"
@@ -67,7 +69,7 @@ export function NavHeader({ onProjectsClick, onBlogsClick }: NavHeaderProps) {
           className="relative w-7 h-7 flex items-center justify-center text-white transition-transform duration-300 hover:scale-110 active:scale-95"
           title="GitHub"
         >
-          <div className="absolute inset-0 rounded-full border border-google-red/30 animate-spin" style={{animationDuration: '6s'}} />
+          <div className="absolute inset-0 rounded-full border border-google-red/30 animate-spin" style={{ animationDuration: '6s' }} />
           <svg
             className="w-4 h-4 relative z-10"
             fill="currentColor"
@@ -79,13 +81,13 @@ export function NavHeader({ onProjectsClick, onBlogsClick }: NavHeaderProps) {
 
         {/* LinkedIn icon */}
         <a
-          href="https://linkedin.com/in/dheenath-sundararajan"
+          href="https://www.linkedin.com/in/dheenath-sundararajan-33a591265/"
           target="_blank"
           rel="noopener noreferrer"
           className="relative w-7 h-7 flex items-center justify-center text-white transition-transform duration-300 hover:scale-110 active:scale-95"
           title="LinkedIn"
         >
-          <div className="absolute inset-0 rounded-full border border-google-green/30 animate-spin" style={{animationDuration: '5s'}} />
+          <div className="absolute inset-0 rounded-full border border-google-green/30 animate-spin" style={{ animationDuration: '5s' }} />
           <svg
             className="w-4 h-4 relative z-10"
             fill="currentColor"

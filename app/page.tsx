@@ -1,9 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { AnimatedBorder } from '@/components/animated-border'
+import { BackgroundPaths } from '@/components/ui/background-paths'
 import { NavHeader } from '@/components/nav-header'
-import { HeroSection } from '@/components/hero-section'
 import { ProjectsModal } from '@/components/projects-modal'
 import { BlogsModal } from '@/components/blogs-modal'
 
@@ -12,12 +11,16 @@ export default function Home() {
   const [isBlogsOpen, setIsBlogsOpen] = useState(false)
 
   return (
-    <AnimatedBorder>
-      <NavHeader
-        onProjectsClick={() => setIsProjectsOpen(true)}
-        onBlogsClick={() => setIsBlogsOpen(true)}
-      />
-      <HeroSection />
+    <main className="relative min-h-screen w-full">
+      <div className="absolute top-0 left-0 w-full z-50">
+        <NavHeader
+          onProjectsClick={() => setIsProjectsOpen(true)}
+          onBlogsClick={() => setIsBlogsOpen(true)}
+        />
+      </div>
+
+      <BackgroundPaths title="Dheenath Sundararajan" />
+
       <ProjectsModal
         isOpen={isProjectsOpen}
         onClose={() => setIsProjectsOpen(false)}
@@ -26,6 +29,6 @@ export default function Home() {
         isOpen={isBlogsOpen}
         onClose={() => setIsBlogsOpen(false)}
       />
-    </AnimatedBorder>
+    </main>
   )
 }
